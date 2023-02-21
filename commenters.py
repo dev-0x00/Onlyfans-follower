@@ -81,5 +81,8 @@ class Commenters:
             commenter = commenter.find_element(
                 By.TAG_NAME, "a"
             ).get_attribute("href")
+            if f"{commenter}\n" in open(f"{self.path}/files/commenters.txt", "r").readlines():
+                pass
 
-            commenters_list.write(f"{commenter}")
+            else:
+                commenters_list.write(f"{commenter}\n")
