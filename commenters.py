@@ -52,7 +52,7 @@ class Commenters:
         commenters_list = open(f"{self.path}/files/commenters.txt" , "a")
         self.browser.get(post_link)
         time.sleep(5)
-
+        
         self.browser.execute_script("document.body.style.zoom='25%'")
         try:
             more_replies = WebDriverWait(self.browser, 10).until(
