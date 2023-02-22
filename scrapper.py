@@ -60,7 +60,6 @@ class Scraplinks:
             self.action.send_keys(Keys.PAGE_DOWN)
             self.action.send_keys(Keys.PAGE_DOWN)
             self.action.send_keys(Keys.PAGE_DOWN)
-            self.action.send_keys(Keys.PAGE_DOWN)
             self.action.perform()
             time.sleep(10)
             scrolls += 1

@@ -24,7 +24,7 @@ def get_headless_browser():
     options.add_argument("--ignore-certificate-errors")
     options.add_argument("--disable-plugins-discovery")
     #options.add_argument("--disable-notifications")
-    options.add_argument("--headless")
+    #options.add_argument("--headless")
     options.add_argument("user_agent=DN")
     #prefs = {"profile.default_content_setting_values.geolocation": 1}
     #options.add_experimental_option("prefs", prefs)
